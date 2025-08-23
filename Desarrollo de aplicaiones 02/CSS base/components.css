@@ -1,0 +1,22 @@
+/* Botones con variantes (BEM) */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .65rem 1.1rem; border-radius: 999px; border: 0; cursor: pointer;
+  background: #2a2f3a; color: var(--text); transition: transform .12s ease, filter .12s ease;
+}
+.btn--primary   { background: var(--primary); }
+.btn--secondary { background: var(--secondary); color: #062b30; font-weight: 700; }
+.btn--ghost     { background: transparent; outline: 1px solid #374151; }
+
+/* Animaciones con keyframes + respeta reduced-motion */
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero__title, .hero__subtitle, .btn[data-role="cta"] { animation: floatUp .6s ease both; }
+.hero__subtitle { animation-delay: .1s; }
+.btn[data-role="cta"] { animation-delay: .2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
