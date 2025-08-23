@@ -1,0 +1,8 @@
+.grid.galeria{
+  display: grid; gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  padding: 1rem; width: min(100% - 2rem, var(--maxw)); margin: 0 auto;
+}
+.galeria li { list-style: none; }
+.galeria img { width: 100%; height: auto; display: block; border-radius: 12px; transition: transform .18s ease; }
+.galeria img:hover, .galeria img:focus-visible { transform: scale(1.02); outline: none; }
