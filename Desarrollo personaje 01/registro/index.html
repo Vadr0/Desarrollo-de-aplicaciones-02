@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <h1>Formulario de Registro</h1>
+  <form id="regForm" novalidate>
+    <label>Nombre: <input type="text" name="nombre" required minlength="3" maxlength="60"></label><br>
+    <label>Email: <input type="email" name="email" required></label><br>
+    <label>Contraseña: <input type="password" name="pass" required minlength="8"
+      pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}"></label><br>
+    <label>Confirmar: <input type="password" name="pass2" required minlength="8"></label><br>
+    <label>Teléfono: <input type="tel" name="tel" pattern="\d{9,15}"></label><br>
+    <label><input type="checkbox" name="terms" required> Acepto términos</label><br>
+    <button type="submit">Registrarse</button>
+  </form>
+  <p id="msg"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
