@@ -1,0 +1,28 @@
+/*MEDIDAS ABSOLUTAS*/
+h1 {
+    font-size: 1cm;
+    color: blue;
+}
+p {
+    margin: 5mm;
+    font-size: 12pt; 
+}
+section.caja {
+    width: 2in;    
+    height: 1in;   
+    background-color: lightblue;
+    text-align: center;
+    line-height: 1in; 
+}
+h2 {
+    font-size: 20pt;
+    color: brown;
+}
+article.seccion {
+    font-size: 2pc;
+    background-color: lightgray;
+}
+li {
+    padding: 10px;
+    border: 1px solid black;
+}

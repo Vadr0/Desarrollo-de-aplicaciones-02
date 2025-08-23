@@ -1,0 +1,17 @@
+/*REGLAS REGEX*/
+a[href^="http"] {
+    color: blue;
+}
+a[href$=".com"] {
+    color: green;
+}
+a[href*="ucsm"] {
+    background-color: yellow;
+}
+[class^="btn"] {
+    padding: 5px;
+    border: 1px solid black;
+}
+[class$="rojo"] {
+    color: red;
+}

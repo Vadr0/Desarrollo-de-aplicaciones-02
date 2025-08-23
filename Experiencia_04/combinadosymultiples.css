@@ -1,0 +1,15 @@
+/*COMBINACIONES*/
+section ul li {color: blue;}
+section > ul {border: 1px solid black;}
+h1 + p {color: red;}
+h2 ~ p {background-color: yellow;}
+p span {font-weight: bold;color: green;}
+section ul {background-color: lightgray;}
+li a {text-decoration: none;}
+
+/*CASOS MÚLTIPLES*/
+h1, h2, p {font-family: Arial;}
+h1, h2 {color: purple;}
+p, span {text-decoration: underline;}
+ul, p {background-color: #f0f0f0;}
+h1, h2 {font-size: 24px;}

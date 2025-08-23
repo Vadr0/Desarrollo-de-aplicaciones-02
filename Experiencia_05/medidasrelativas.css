@@ -1,0 +1,24 @@
+/*MEDIDAS RELATIVAS*/
+p {
+    font-size: 1.5em;
+    color: green;
+}
+h1 {
+    font-size: 2rem;
+    color: red;
+}
+section.caja {
+    width: 50vw;  
+    height: 20vh;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 20vh;
+}
+article.seccion {
+    height: 30vh;
+    background-color: lightyellow;
+}
+ul {
+    width: 80%;
+    background-color: #eee;
+}
