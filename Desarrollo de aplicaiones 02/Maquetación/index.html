@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Lab – Inicio</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" data-role="brand">
+    <h1 class="brand">CSS <span class="accent">Lab</span></h1>
+    <nav aria-label="Principal">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="docs/guia.pdf">Guía PDF</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="hero" class="hero">
+      <h2 class="hero__title">Diseño web moderno con CSS</h2>
+      <p class="hero__subtitle">Selectores, herencia, cascada, flexbox, grid y más.</p>
+      <a class="btn btn--primary" href="servicios.html" data-role="cta">Empezar</a>
+    </section>
+
+    <section class="cards">
+      <article class="card" data-type="tip">
+        <h3 class="card__title">Selectores</h3>
+        <p>Por etiqueta, <span class="strong">clase</span>, <em>id</em>, atributos, pseudo‑clases y pseudo‑elementos.</p>
+      </article>
+      <article class="card" data-type="tip">
+        <h3 class="card__title">Cascada</h3>
+        <p>Especificidad, herencia y <code>!important</code>.</p>
+      </article>
+      <article class="card" data-type="tip">
+        <h3 class="card__title">Responsive</h3>
+        <p>Grid + Flexbox con <strong>media queries</strong>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 CSS Lab • <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN</a></p>
+  </footer>
+</body>
+</html>
