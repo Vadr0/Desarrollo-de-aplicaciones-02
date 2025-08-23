@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 03 - Selectores CSS</title>
+    <link rel="stylesheet" href="pseudoclases.css">
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Turismo en Arequipa</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia" title="Ir a historia">Historia</a></li>
+                <li><a href="#lugares" target="_blank">Lugares</a></li>
+                <li><a href="#contacto" data-info="seccion">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="historia">
+            <h2>Historia</h2>
+            <p class="texto">Arequipa es conocida como la Ciudad Blanca y su centro histórico es Patrimonio de la
+                Humanidad.</p>
+        </section>
+
+        <section id="lugares">
+            <h2>Lugares destacados</h2>
+            <article class="card">
+                <h3>Monasterio de Santa Catalina</h3>
+                <p>Un complejo arquitectónico colonial con calles angostas y colores vivos.</p>
+            </article>
+            <article class="card especial">
+                <h3>Mirador de Yanahuara</h3>
+                <p>Arcos de sillar que enmarcan el paisaje del volcán Misti.</p>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre">
+
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" placeholder="ejemplo@correo.com">
+
+                <label for="pais">País:</label>
+                <select name="pais">
+                    <option value="peru">Perú</option>
+                    <option value="chile">Chile</option>
+                    <option value="argentina">Argentina</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Turismo Arequipa</p>
+    </footer>
+</body>
+
+</html>

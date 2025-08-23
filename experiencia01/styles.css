@@ -1,0 +1,13 @@
+/* Reglas CSS en archivo vinculado */
+body { font-family: Arial, sans-serif; line-height: 1.5; margin: 0; }
+header { background: #f0f0f0; padding: 16px; }
+h1 { margin: 0; color: #333; font-size: 28px; }
+nav ul { list-style: none; padding: 0; margin: 8px 0; display: flex; gap: 12px; }
+nav a { text-decoration: none; color: #0a58ca; }
+main { padding: 16px; }
+section { margin-bottom: 16px; }
+h2 { color: #444; margin-bottom: 8px; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.highlight { background: #ffefc2; padding: 2px 4px; }
+aside { background: #fafafa; border-left: 4px solid #ddd; padding: 12px; }
+footer { background: #f0f0f0; padding: 16px; text-align: center; }

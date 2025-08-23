@@ -1,0 +1,42 @@
+/* === Selectores con pseudo clases === */
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: limegreen;
+}
+
+input:focus {
+    border: 2px solid orange;
+    background: #fff3cd;
+}
+
+input:required {
+    border-left: 4px solid red;
+}
+
+ul li:first-child {
+    background: #e0f7fa;
+}
+
+ul li:last-child {
+    background: #ffe0b2;
+}
+
+ul li:nth-child(2) {
+    background: #f3e5f5;
+}
+
+button:disabled {
+    background: #ddd;
+    color: #666;
+}
+
+select:focus {
+    border-color: teal;
+}

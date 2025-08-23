@@ -1,0 +1,36 @@
+/* === Selectores de atributos === */
+a[title] {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+a[target="_blank"] {
+    color: crimson;
+    font-weight: bold;
+}
+
+a[data-info="seccion"] {
+    color: orange;
+}
+
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 4px;
+}
+
+input[type="email"] {
+    border: 2px solid green;
+    padding: 4px;
+}
+
+select[name="pais"] {
+    border: 2px dashed purple;
+    background: #f9f9f9;
+}
+
+button[type="submit"] {
+    background: navy;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+}

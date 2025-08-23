@@ -1,0 +1,36 @@
+/* === Selectores con pseudo elementos === */
+h2::before {
+  content: "★ ";
+  color: gold;
+}
+
+h2::after {
+  content: " ★";
+  color: gold;
+}
+
+p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  color: darkblue;
+}
+
+p::first-line {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+::selection {
+  background: yellow;
+  color: black;
+}
+
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+li::marker {
+  color: crimson;
+  font-size: 1.2em;
+}
