@@ -1,0 +1,13 @@
+/* Específicos de la portada: muestra selectores múltiples separados por coma */
+div, p, span, em { /* solo demostrativo */ }
+
+.hero::before {
+  content: ""; display: block; width: min(100%, var(--maxw)); height: 140px; margin: 0 auto 1rem;
+  background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 55%, transparent), transparent);
+  border-radius: var(--radius);
+}
+
+/* nth-child para la grilla de cards */
+.cards .card:nth-child(1) { border-color: color-mix(in oklab, var(--primary) 40%, #1f2937); }
+.cards .card:nth-child(2) { border-color: color-mix(in oklab, var(--secondary) 40%, #1f2937); }
+.cards .card:nth-child(3) { border-color: color-mix(in oklab, var(--accent) 40%, #1f2937); }
