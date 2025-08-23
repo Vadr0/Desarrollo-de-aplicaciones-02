@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #125e7a; /* Azul estilo Logitech */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* Azul oscuro Logitech */
+}
+
+label {
+  display: block;
+  margin-bottom: .8rem;
+  text-align: left;
+}
+
+input {
+  margin: .3rem 0 1rem;
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #0065A3; /* Botón color Logitech */
+  color: #fff;
+  border: none;
+  padding: .8rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #004f82; /* tono más oscuro al pasar el mouse */
+}
+
+#msg {
+  margin-top: 1rem;
+  font-weight: bold;
+}
