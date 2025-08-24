@@ -1,0 +1,27 @@
+/* coloresrgb.css */
+
+/* Cambiar color de encabezados */
+h1 {
+    color: rgb(0, 128, 255); /* azul con valor entero */
+}
+
+/* Cambiar color de párrafos */
+p {
+    color: rgb(0%, 100%, 0%); /* verde usando porcentaje */
+}
+
+/* Cambiar color de la sección caja */
+section.caja {
+    background-color: rgb(255, 255, 0); /* amarillo */
+}
+
+/* Cambiar color de artículos */
+article.seccion {
+    background-color: rgb(255, 165, 0); /* naranja */
+}
+
+/* Cambiar color de elementos de lista */
+li {
+    background-color: rgb(173, 216, 230); /* azul claro */
+    color: rgb(0, 0, 139); /* azul oscuro */
+}

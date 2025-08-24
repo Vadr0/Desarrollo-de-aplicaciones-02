@@ -1,0 +1,29 @@
+/* coloreshexadecimal.css */
+
+/* Cambiar color de encabezados */
+h1 {
+    color: #FF1493; /* rosa intenso */
+}
+
+/* Cambiar color de párrafos */
+p {
+    color: #00CED1; /* turquesa */
+}
+
+/* Cambiar color de la sección caja */
+section.caja {
+    background-color: #FFD700; /* dorado */
+}
+
+/* Cambiar color de artículos */
+article.seccion {
+    background-color: #8A2BE2; /* azul violeta */
+    color: #FFFFFF; /* texto blanco para contraste */
+}
+
+/* Cambiar color de elementos de lista */
+li {
+    background-color: #FF7F50; /* coral */
+    color: #000000; /* texto negro */
+    border-color: #000000; /* borde negro para contraste */
+}

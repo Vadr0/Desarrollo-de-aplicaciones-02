@@ -1,0 +1,27 @@
+/* colorespornombre.css */
+
+/* Cambiar color de encabezados */
+h1 {
+    color: blue;
+}
+
+/* Cambiar color de párrafos */
+p {
+    color: green;
+}
+
+/* Cambiar color de cajas */
+section.caja {
+    background-color: yellow;
+}
+
+/* Cambiar color de artículos */
+article.seccion {
+    background-color: orange;
+}
+
+/* Cambiar color de elementos de lista */
+li {
+    background-color: lightblue;
+    color: darkblue;
+}

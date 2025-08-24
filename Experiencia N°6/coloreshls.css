@@ -1,0 +1,29 @@
+/* coloreshls.css */
+
+/* Encabezados */
+h1 {
+    color: hsl(60, 100%, 45%); /* amarillo brillante */
+}
+
+/* Párrafos */
+p {
+    color: hsl(120, 80%, 30%); /* verde oscuro */
+}
+
+/* Sección caja */
+section.caja {
+    background-color: hsl(200, 90%, 60%); /* azul celeste */
+}
+
+/* Artículos */
+article.seccion {
+    background-color: hsl(340, 70%, 50%); /* rojo fucsia */
+    color: hsl(0, 0%, 100%); /* blanco para contraste */
+}
+
+/* Listas */
+li {
+    background-color: hsl(30, 100%, 50%); /* naranja intenso */
+    color: hsl(210, 100%, 20%); /* azul muy oscuro para el texto */
+    border-color: hsl(210, 100%, 20%); /* borde azul oscuro */
+}
