@@ -11,3 +11,21 @@ div, p, span, em { /* solo demostrativo */ }
 .cards .card:nth-child(1) { border-color: color-mix(in oklab, var(--primary) 40%, #1f2937); }
 .cards .card:nth-child(2) { border-color: color-mix(in oklab, var(--secondary) 40%, #1f2937); }
 .cards .card:nth-child(3) { border-color: color-mix(in oklab, var(--accent) 40%, #1f2937); }
+
+/* ===== Animación botón CTA ===== */
+@keyframes floatPulse {
+  0%   { transform: translateY(0) scale(1); background-color: var(--primary); }
+  50%  { transform: translateY(-6px) scale(1.05); background-color: color-mix(in oklab, var(--primary) 60%, var(--accent)); }
+  100% { transform: translateY(0) scale(1); background-color: var(--primary); }
+}
+
+.btn--primary[data-role="cta"] {
+  animation: floatPulse 2s ease-in-out infinite;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn--primary[data-role="cta"]:hover {
+  transform: translateY(-8px) scale(1.08);
+  background-color: var(--accent);
+  filter: brightness(1.1);
+}
