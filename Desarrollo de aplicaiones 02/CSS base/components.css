@@ -20,3 +20,43 @@
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ===== Animación flotante para todos los botones ===== */
+@keyframes floatPulse {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-4px) scale(1.03); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Botones primarios */
+.btn--primary {
+  animation: floatPulse 2s ease-in-out infinite;
+  transition: transform 0.2s ease, background-color 0.2s ease, filter 0.2s ease;
+}
+
+.btn--primary:hover, .btn--primary:focus-visible {
+  transform: translateY(-6px) scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Botones secundarios */
+.btn--secondary {
+  animation: floatPulse 2.2s ease-in-out infinite;
+  transition: transform 0.2s ease, background-color 0.2s ease, filter 0.2s ease;
+}
+
+.btn--secondary:hover, .btn--secondary:focus-visible {
+  transform: translateY(-6px) scale(1.05);
+  filter: brightness(1.08);
+}
+
+/* Botones ghost */
+.btn--ghost {
+  animation: floatPulse 1.8s ease-in-out infinite;
+  transition: transform 0.2s ease, background-color 0.2s ease, filter 0.2s ease;
+}
+
+.btn--ghost:hover, .btn--ghost:focus-visible {
+  transform: translateY(-5px) scale(1.04);
+  filter: brightness(1.05);
+}
