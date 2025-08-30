@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <title>EJERCICIO - 3</title> <!-- Título de la página -->
+</head>
+<body>
+    <link rel="stylesheet" href="estilos.css"> <!-- Vincula el CSS externo -->
+
+    <!-- Menú de navegación -->
+    <div>
+        <ul class="menu">
+            <li><a href="#" onclick="showSection('inicio')">INICIO</a></li> <!-- Botón Inicio -->
+            <li><a href="#" onclick="showSection('cameras')">CAMERAS</a></li> <!-- Botón Cameras -->
+            <li><a href="#" onclick="showSection('about')">ABOUT</a></li> <!-- Botón About -->
+            <li><a href="#" onclick="showSection('contact')">CONTACT</a></li> <!-- Botón Contact -->
+        </ul>
+    </div>
+
+    <!-- Sección Inicio -->
+    <div id="inicio" class="section">
+        <h1> INICIO EN MANTENIMIENTO :[</h1>
+    </div>
+
+    <!-- Sección Cameras -->
+    <div id="cameras" class="section active">
+        <h1>CAMERAS</h1>
+        <div class="container"> <!-- Contenedor de todas las cajas -->
+
+            <!-- Caja 1 -->
+            <div class="caja1">
+                <img src="/imagenes/imagen1.png" alt="Smartphone" class="imagen"> <!-- Imagen -->
+                <figcaption>Smartphone</figcaption> <!-- Título de la imagen -->
+                <div class="descripcion">
+                    Built-in camera for quick photos and instant sharing. <!-- Descripción -->
+                </div>
+                <div class="info">
+                    <span class="precio">Price: $450</span> <!-- Precio -->
+                    <span class="stock">In Stock</span> <!-- Estado -->
+                </div>
+                <button class="boton">ADD TO CART</button> <!-- Botón -->
+            </div>
+
+            <!-- Caja 2 -->
+            <div class="caja2">
+                <img src="/imagenes/imagen2.png" alt="Smartphone" class="imagen">
+                <figcaption>Some Old Polaried Camera That Produces Hipstery Effects </figcaption>
+                <div class="descripcion">
+                    Instant camera producing retro-style photos with unique effects.
+                </div>
+                <div class="info">
+                    <span class="precio">Price: $450</span>
+                    <span class="stock">In Stock</span>
+                </div>
+                <button class="boton">ADD TO CART</button>
+            </div>
+
+            <!-- Caja 3 -->
+            <div class="caja3">
+                <img src="/imagenes/imagen3.png" alt="Smartphone" class="imagen">
+                <figcaption>GoPro Hero 4 Silver</figcaption>
+                <div class="descripcion">
+                    Waterproof action camera, perfect for adventures and extreme sports.
+                </div>
+                <div class="info">
+                    <span class="precio">Price: $450</span>
+                    <span class="stock">In Stock</span>
+                </div>
+                <button class="boton">ADD TO CART</button>
+            </div>
+
+            <!-- Caja 4 -->
+            <div class="caja4">
+                <img src="/imagenes/imagen4.png" alt="Smartphone" class="imagen">
+                <figcaption>Handheld Camera</figcaption>
+                <div class="descripcion">
+                    Portable and versatile camera for everyday use and on-the-go filming.
+                </div>
+                <div class="info">
+                    <span class="precio">Price: $450</span>
+                    <span class="stock">In Stock</span>
+                </div>
+                <button class="boton">ADD TO CART</button>
+            </div>
+
+            <!-- Caja 5 -->
+            <div class="caja5">
+                <img src="/imagenes/imagen5.png" alt="Smartphone" class="imagen">
+                <figcaption>Small Camera</figcaption>
+                <div class="descripcion">
+                    Small and lightweight camera, ideal for travel and casual photography.
+                </div>
+                <div class="info">
+                    <span class="precio">Price: $450</span>
+                    <span class="stock">In Stock</span>
+                </div>
+                <button class="boton">ADD TO CART</button>
+            </div>
+
+            <!-- Caja 6 -->
+            <div class="caja6">
+                <img src="/imagenes/imagen6.png" alt="Smartphone" class="imagen">
+                <figcaption>Big Camera</figcaption>
+                <div class="descripcion">
+                    Advanced camera with interchangeable lenses for high-quality professional photography.
+                </div>
+                <div class="info">
+                    <span class="precio">Price: $450</span>
+                    <span class="stock">In Stock</span>
+                </div>
+                <button class="boton">ADD TO CART</button>
+            </div>
+
+        </div>
+    </div>
+ 
+    <!-- Sección About -->
+    <div id="about" class="section">
+        <h1>ABOUT EN MANTENIMIENTO :[</h1>
+    </div>
+
+    <!-- Sección Contact -->
+    <div id="contact" class="section">
+        <h1>CONTACT EN MANTENIMIENTO :[</h1>
+    </div>
+
+    <!-- Script para mostrar la sección seleccionada -->
+    <script>
+        function showSection(id) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.section').forEach(sec => {
+                sec.classList.remove('active');
+            });
+            // Mostrar la sección seleccionada
+            document.getElementById(id).classList.add('active');
+
+            // Quitar clase activa de todos los enlaces del menú
+            document.querySelectorAll('.menu li a').forEach(link => {
+                link.classList.remove('active-menu');
+            });
+
+            // Agregar clase activa al enlace clickeado
+            const menuLinks = document.querySelectorAll('.menu li a');
+            menuLinks.forEach(link => {
+                if (link.getAttribute('onclick') === `showSection('${id}')`) {
+                    link.classList.add('active-menu');
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>

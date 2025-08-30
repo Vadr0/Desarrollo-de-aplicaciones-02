@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(to bottom right, #580062e1, #71007dde , #ba7df2); /* Fondo con degradado en diagonal */
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra el contenedor horizontalmente */
+    align-items: flex-start; /* Alinea el contenedor arriba */
+    height: 100vh; /* Ocupa toda la pantalla */
+    margin: 0; /* Quita márgenes por defecto */
+    padding-top: 50px; /* Deja espacio desde arriba */
+}
+
+.container {
+    width: 800px; /* Ancho del contenedor */
+    height: 500px; /* Alto del contenedor */
+    display: grid; /* Activa grid */
+    grid-template-columns: 200px 200px 200px 200px 200px; /* 5 columnas de 200px */
+    grid-template-rows: 200px 200px 200px; /* 3 filas de 200px */
+    grid-row-gap: 10px; /* Espacio entre filas */
+    grid-column-gap: 10px; /* Espacio entre columnas */
+    padding: 10px; /* Relleno interno */
+    justify-content: center; /* Centra el grid dentro del contenedor */
+}
+
+.caja1 {
+    background-color: rgb(82, 169, 82); /* Verde */
+    display: flex; /* Flexbox dentro de la caja */
+    border: 1px solid black; /* Borde negro */
+    border-radius: 2ch; /* Bordes redondeados */
+    grid-column: span 2; /* Ocupa 2 columnas */
+    grid-row: span 2; /* Ocupa 2 filas */
+}
+
+.caja2 {
+    background-color: rgb(0, 204, 255); /* Celeste */
+    display: flex; /* Flexbox dentro de la caja */
+    border: 1px solid black; /* Borde negro */
+    border-radius: 2ch; /* Bordes redondeados */
+    grid-column: span 3; /* Ocupa 3 columnas */
+    grid-row: span 1; /* Ocupa 1 fila */
+}
+
+.caja3 {
+    background-color: rgb(246, 93, 93); /* Rojo */
+    display: flex; /* Flexbox dentro de la caja */
+    border: 1px solid black; /* Borde negro */
+    border-radius: 2ch; /* Bordes redondeados */
+    grid-column: span 2; /* Ocupa 2 columnas */
+    grid-row: span 2; /* Ocupa 2 filas */
+}
+
+.caja4 {
+    background-color: rgb(252, 146, 213); /* Rosa claro */
+    display: flex; /* Flexbox dentro de la caja */
+    border: 1px solid black; /* Borde negro */
+    border-radius: 2ch; /* Bordes redondeados */
+}
+
+.caja5 {
+    background-color: rgb(255, 0, 128); /* Fucsia */
+    display: flex; /* Flexbox dentro de la caja */
+    border: 1px solid black; /* Borde negro */
+    border-radius: 2ch; /* Bordes redondeados */
+    grid-column: span 2; /* Ocupa 2 columnas */
+}
+
+.caja6 {
+    background-color: rgba(6, 153, 126, 0.748); /* Verde agua translúcido */
+    display: flex; /* Flexbox dentro de la caja */
+    border: 1px solid black; /* Borde negro */
+    border-radius: 2ch; /* Bordes redondeados */
+}
