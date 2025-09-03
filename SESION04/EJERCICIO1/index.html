@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Propinas</title>
+</head>
+<body>
+  <h1>Calculadora de Propinas</h1>
+
+  <!-- Campos de entrada -->
+  <label>Monto de la cuenta: </label>
+  <input type="number" id="cuenta" placeholder="Ej. 120"><br><br>
+
+  <label>Porcentaje de propina: </label>
+  <input type="number" id="porcentaje" placeholder="Ej. 15"><br><br>
+
+  <!-- Botón para calcular -->
+  <button onclick="mostrarResultado()">Calcular</button>
+
+  <h2>Resultado:</h2>
+  <p id="propina"></p>
+  <p id="total"></p>
+
+  <script>
+    // Función para calcular propina
+    function calcularPropina(montoCuenta, porcentajePropina) {
+      let propina = montoCuenta * (porcentajePropina / 100);
+      let totalPagar = montoCuenta + propina;
+
+      return {
+        propina: propina,
+        total: totalPagar
+      };
+    }
+
+    // Mostrar el resultado en el HTML
+    function mostrarResultado() {
+      let montoCuenta = parseFloat(document.getElementById("cuenta").value);
+      let porcentaje = parseFloat(document.getElementById("porcentaje").value);
+
+      if (isNaN(montoCuenta) || isNaN(porcentaje)) {
+        alert("Por favor ingresa valores válidos.");
+        return;
+      }
+
+      let resultado = calcularPropina(montoCuenta, porcentaje);
+
+      document.getElementById("propina").innerText = "Propina: " + resultado.propina.toFixed(2);
+      document.getElementById("total").innerText = "Total a pagar: " + resultado.total.toFixed(2);
+    }
+  </script>
+</body>
+</html>
