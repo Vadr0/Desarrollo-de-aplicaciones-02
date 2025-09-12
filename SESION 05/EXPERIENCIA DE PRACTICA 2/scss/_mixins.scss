@@ -1,0 +1,14 @@
+// _mixins.scss
+@mixin boton-personalizado($bg, $color) {
+  display: inline-block;
+  padding: .5rem 1rem;
+  border-radius: $radio-borde;
+  background-color: $bg;
+  color: $color;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: darken($bg, 8%);
+  }
+}

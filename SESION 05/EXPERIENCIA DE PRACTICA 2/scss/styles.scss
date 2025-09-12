@@ -1,0 +1,39 @@
+// styles.scss
+@import 'variables';
+@import 'mixins';
+@import 'funciones';
+
+// Estilos base
+body {
+  font-family: $fuente-base;
+  background-color: $color-fondo;
+  font-size: px-a-rem(16);
+
+  h1, h2, h3 {
+    color: $color-primario;
+  }
+}
+
+// Navbar con anidamiento
+.navbar {
+  background-color: $color-fondo;
+  .navbar-brand {
+    font-weight: bold;
+    color: $color-primario;
+  }
+  .nav-link {
+    color: $color-secundario;
+    &:hover {
+      color: $color-primario;
+    }
+  }
+}
+
+// Uso de mixin en botones
+.btn-azul {
+  @include boton-personalizado($color-primario, #fff);
+}
+
+.btn-gris {
+  @include boton-personalizado($color-secundario, #fff);
+}

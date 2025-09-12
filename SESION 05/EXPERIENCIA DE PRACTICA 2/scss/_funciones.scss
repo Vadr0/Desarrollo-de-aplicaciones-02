@@ -1,0 +1,4 @@
+// _funciones.scss
+@function px-a-rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+}

@@ -1,0 +1,8 @@
+@mixin boton-base($padding: .5rem .9rem) {
+    display: inline-block;
+    padding: $padding;
+    border-radius: $radio-bordes;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}

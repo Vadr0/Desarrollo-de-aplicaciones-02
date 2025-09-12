@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+@import 'funciones';
+
+body {
+    font-family: $fuente-base;
+    background-color: $color-fondo;
+    font-size: px-a-rem(16);
+}
+.btn-personal {
+    @include boton-base();
+    background-color: $color-primario;
+    color: #fff;
+    &:hover {
+        background-color: darken($color-primario, 8%);
+    }
+}
+.navbar {
+    background-color: $color-fondo;
+    .navbar-brand {
+        font-weight: 700;
+    }
+}
