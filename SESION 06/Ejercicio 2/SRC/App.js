@@ -1,52 +1,49 @@
 import React, { Component } from "react"
 import { Routes, Route } from "react-router-dom"
-import NavBar from "./components/NavBar"
-import Table from "./components/Table"
-import Form from "./components/Form"
-import Home from "./pages/Home"
-import About from "./pages/About"
+import BarraNavegacion from "./componentes/BarraNavegacion"
+import Tabla from "./componentes/Tabla"
+import Formulario from "./componentes/Formulario"
+import Inicio from "./paginas/Inicio"
+import Acerca from "./paginas/Acerca"
 import WikiDemo from "./api/WikiDemo"
 
 export default class App extends Component {
   state = {
-    characters: [
-      { name: "Charlie", job: "Janitor" },
-      { name: "Mac",     job: "Bouncer" },
-      { name: "Dee",     job: "Aspiring actress" },
-      { name: "Dennis",  job: "Bartender" },
-    ],
+    personas: [
+      { nombre: "Carlos", trabajo: "Portero" },
+      { nombre: "María", trabajo: "Mesera" },
+    ]
   }
 
-  removeCharacter = (index) => {
-    this.setState(({ characters }) => ({
-      characters: characters.filter((_, i) => i !== index)
+  eliminarPersona = (indice) => {
+    this.setState(({ personas }) => ({
+      personas: personas.filter((_, i) => i !== indice)
     }))
   }
 
-  handleSubmit = (character) => {
-    this.setState(({ characters }) => ({
-      characters: [...characters, character]
+  agregarPersona = (persona) => {
+    this.setState(({ personas }) => ({
+      personas: [...personas, persona]
     }))
   }
 
   render() {
-    const { characters } = this.state
-
+    const { personas } = this.state
     return (
       <>
-        <NavBar />
-        <div className="container">
+        <BarraNavegacion />
+        <div className="contenedor">
           <Routes>
             <Route path="/" element={
-              <Home>
-                <div className="card" style={{ marginTop: 16 }}>
+              <Inicio>
+                <div className="carta">
                   <h3>Lista de Personas</h3>
-                  <Table characterData={characters} removeCharacter={this.removeCharacter} />
-                  <Form handleSubmit={this.handleSubmit} />
+                  <Tabla datosPersonas={personas} eliminarPersona={this.eliminarPersona} />
+                  <Formulario agregarPersona={this.agregarPersona} />
                 </div>
-              </Home>
+              </Inicio>
             } />
-            <Route path="/about" element={<About />} />
+            <Route path="/acerca" element={<Acerca />} />
             <Route path="/api" element={<WikiDemo />} />
           </Routes>
         </div>
